@@ -1,0 +1,49 @@
+git add .
+git push
+git clone http
+git init
+git commit -m "this is our first commit" : we do this to store the state so that we can come back later on 
+                                            to that state for rollback.
+
+git log: to  view to commits status
+ 
+git log --author="username": to view commits of particular author or user
+
+git status 
+git status -a
+
+git diff : to view the difference in status of master file and file in local directory(working copy)
+
+git diff --staged :compares the staging copy with repository 
+
+9840336378.
+
+git rm third.html : removes or deletes file from the repository as well as working directory but only after we commit it using commit command
+
+git mv currentifilename.txt newfile.txt
+
+
+
+thus for new projects:
+first git init
+second git add.
+third git commit -m "this is first"
+
+
+
+git commit -am "this command is to commit to repository directly.skips staging process .this is done only when sure things 
+                have to be done"
+git checkout -- picture.html >> this command is used to rollback the working directory to state that is same as repository directory.ie from lastly commited state 
+git reset HEAD picture.html >>> is used to unstage the file from stage to repository folder
+git checkout 01744f -- picture.html >> to reverse back to the given version indecated by commit number
+
+
+writing directory to github public location site:
+
+1 create new repository in github
+2 go to bit bash and type command
+   git remote add gitHubrepo(this is file name for repo) url
+2 git push -u gitHubrepo master (u means take all the files) 
+
+
+.gitignore >> this is file inside the folder which contains the files and setting files which we want to ignore while upgrading into github repository
